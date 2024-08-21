@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    padding: 0 15px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #219ebc;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #219ebc;
+}
+
+.jumbotron {
+    position: relative;
+    background-image: url('https://img.freepik.com/free-psd/time-is-today-banner-template_23-2148772915.jpg?w=1380&t=st=1724172170~exp=1724172770~hmac=247763239363ca25fe768a662ccdb30793e097ec17b5267886975be1cddee70c');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    margin-bottom: 0;
+    z-index: 1;
+}
+
+.jumbotron::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+.jumbotron h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.jumbotron p {
+    font-size: 1.25rem;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+    color: #666;
+}
+
+.footer p {
+    margin: 0;
+}
+
+h2,
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #219ebc;
+    border-color: #219ebc;
+}
+
+.btn-primary:hover {
+    background-color: #1a7d8d;
+    border-color: #1a7d8d;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 2.5rem;
+    }
+
+    .jumbotron p {
+        font-size: 1rem;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .jumbotron h1 {
+        font-size: 1.5rem;
+    }
+
+    .jumbotron p {
+        font-size: 0.875rem;
+    }
+
+    .card-img-top {
+        height: 120px;
+    }
+}

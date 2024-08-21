@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel - Destinations</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <!-- Navbar code omitted for brevity -->
+            <%- include('partials/navbar') %>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <h1>Our Destinations</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/18787359/pexels-photo-18787359/free-photo-of-skyline-of-singapore-with-view-of-the-singapore-flyer-at-sunset.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        class="card-img-top" alt="Singapore">
+                    <div class="card-body">
+                        <h5 class="card-title">Singapore</h5>
+                        <p class="card-text">Explore the vibrant culture and iconic landmarks of Singapore.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/8319460/pexels-photo-8319460.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        class="card-img-top" alt="Dubai">
+                    <div class="card-body">
+                        <h5 class="card-title">Dubai</h5>
+                        <p class="card-text">Experience the luxurious lifestyle and modern architecture of Dubai.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://images.pexels.com/photos/2082103/pexels-photo-2082103.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris</h5>
+                        <p class="card-text">Discover the romance and historic beauty of Paris.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
